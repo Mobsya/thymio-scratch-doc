@@ -51,7 +51,7 @@ From your experience with the Thymio robot, you know that it will not
 move straight even if both motors are set to the same power. The wheels
 and motors are not identical, the friction may vary, and so on. This
 noisy behavior is called \emph{jitter}. Place the following block before
-first \p{move} block to simulate random jitter:
+first \p{move} block to simulate jitter:
 
 \gr{jitter}{.4}
 
@@ -72,7 +72,7 @@ whole surface:
 In order the evaluate the quality of the sweep, the robot draws a thin
 red line as it moves. \scrblk{pen-down} causes an imaginary pen in the
 sprite to be lowered ``down'' so that it is in contact with the stage.
-We also choose to set the pen color to red.
+The pen color is set to red.
 
 The simulation could be programmed simply by commanding the
 sprite to move the correct distances---$280$ steps horizontally and
@@ -102,7 +102,7 @@ stage.
 The finite automata project in the VPL tutorial was inspired by the
 light-painting projects described on the Thymio website. The idea is to
 have the robot sweep over an area and respond to codes placed on the
-floor. The code consists of synchronization marks and marks of symbols
+floor. The code consists of sync (synchronization) marks and marks of symbols
 on the stage. \cref{fig.fa} shows the stage with 4 rows of 4 sync marks
 (the blue circles) and 9 vertical black lines representing the symbol 1.
 
@@ -128,7 +128,7 @@ To check the behavior of the sprite,
 display different colored top lights in each state.
 
 \warningbox{The sync marks should be sufficiently far apart so that
-the \p{Thymio} sprite doesn't touch two two marks at the same time.}
+the \p{Thymio} sprite doesn't touch two marks at the same time.}
 
 \subsection*{Synchronizing the sprites}
 
@@ -186,7 +186,7 @@ Guidance:
 
 \begin{itemize}
 
-\item Declare a variable that will take four values:
+\item Declare a variable that takes four values:
 \p{search-left}, \p{search-right}, \p{found}, \p{stop}. This variable
 will take on successive values as it accomplishes each part of the
 mission.

@@ -26,7 +26,7 @@ sprite:
 
 \item Scratch programs are started by clicking on the \emph{green flag}
 above the stage. When the green flag is clicked, the costume of the
-sprite is set to the \p{blank} costume which displays the Thymio with
+sprite is set to the \p{blank} costume, which displays the Thymio with
 the top lights off.
 
 \item The second script responds to the event of pressing the \bu{r}
@@ -63,8 +63,7 @@ the size of the image of the sprites in order for a project to work. You
 can do this by shrinking a costume in the paint program: click on the
 icon \scrblk{shrink} and then on the image. A better solution is to use
 the block \scrblk[-10]{set-size} from the \bu{Looks} palette in the initialization
-of a program; experiment with different values in the small
-square until you have the size the need.}
+of a program; experiment with different values until you have the size the need.}
 
 \sect{Sending and receiving messages}
 
@@ -85,7 +84,7 @@ depending on which image is clicked: \p{center}, \p{front}, \p{back},
 
 Click on the \p{Pointer} sprite in the sprite area in the lower left of
 the Scratch window. Without going into detail, just notice that the
-second scripts uses the block \scrblk[-8]{broadcast-and-wait} which causes
+second script uses the block \scrblk[-8]{broadcast-and-wait}, which causes
 a message (here, \p{front}) to be sent. Now, click back on the \p{Thymio}
 sprite and you will see the scripts in Figure~\ref{fig.colors}. Scripts
 starting with the event block \scrblk{when-i-receive} are performed when
@@ -102,5 +101,5 @@ are touched. In Scratch, the \bu{Sound} palette contains a rich set of
 blocks for playing notes. Experiment with these blocks and then replace
 the blocks that change costumes in the above project with blocks that
 play different sounds when different buttons are clicked. You can also
-add sound blocks to the scripts, so that the sprite both changes colors
-and plays sounds.
+add sound blocks to the script in Figure~\ref{fig.colors}, so that the
+sprite both changes colors and plays sounds.

@@ -26,8 +26,8 @@ with the second color.
 
 \end{itemize}
 
-\trickbox{To set the color, click the little square and
-then move the mouse pointer and click an area on a sprite or the
+\trickbox{To set the color, click the little square,
+move the mouse pointer and click an area on a sprite or the
 backdrop that has the color you want.}
 
 Scratch does not support checking if the mouse pointer is touching
@@ -55,9 +55,9 @@ one of the colors and broadcasts the appropriate message.
 
 Many projects require that the direction from the \p{Thymio} sprite to
 the \p{Pointer} sprite be determined. The implementation of the block
-\scrblk[-6]{get-pointer-direction-block} is shown in \cref{fig.get-dir}. We
-first declare the variable \scrblk[-3]{save-dir} which is used internally
-by this block, and the variable \scrblk[-3]{direction-to-pointer} which is
+\scrblk[-6]{get-pointer-direction-block} is shown in \cref{fig.get-dir}.
+The variable \scrblk[-3]{save-dir} is used internally
+by this block, and the variable \scrblk[-3]{direction-to-pointer} is
 used to return the direction to the calling sprite. Extensive use is
 made of the block \scrblk[-3]{direction} which is predefined in the
 \bu{Motion} palette and gives the current direction in which the sprite
@@ -72,7 +72,7 @@ The \emph{current direction} in which the sprite is pointing is saved in
 \scrblk[-3]{save-dir}. Then, the \p{Thymio} sprite is turned so that it
 points to the \p{Pointer} sprite. The block \scrblk[-3]{direction} now
 contains this new direction. By subtracting the value in
-\scrblk[-3]{save-dir}, we get the difference between the two direction. The
+\scrblk[-3]{save-dir} we get the difference between the two directions. The
 \p{if}-block ensures that this direction is positive between 0 and 360.
 Finally, we turn the \p{Thymio} sprite to point in its original
 direction which was stored in \scrblk[-3]{save-dir}.

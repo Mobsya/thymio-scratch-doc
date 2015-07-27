@@ -6,8 +6,8 @@ In advanced mode, VPL projects can use \emph{states} to remember
 situations and values. There are four elements (``quarters'') to the
 state block, so there are 16 different states. Scratch supports
 \emph{variables} which can be used to store values. They offer many more
-capabilities than VPL states, because there can be as many variables are
-use want and each variable can store a large range of values.
+capabilities than VPL states, because there can be as many variables as
+we want and each variable can store a large range of values.
 
 \scrprj{tap-on-off-state}
 
@@ -21,9 +21,9 @@ the variable's name appears, together with some new blocks:
 
 \gr{declare}{.3}
 
-\informationbox{Displaying the value of the variable}{The check box next
-to the variable block is used to indicate if you want the variable and
-its current value to be displayed on the stage or not.}
+\informationbox{Displaying the value of the variable}{The check next
+to the variable block is used to indicate that you want the variable and
+its current value to be displayed on the stage.}
 
 We need to \emph{initialize} the variable in the script that is
 run when the green flag is clicked. This gives the variable a
@@ -38,7 +38,7 @@ meaning that it begins to run when the sprite that contains the script is clicke
 \gr{tap-on-off-state}{.4}
 
 It checks the value of the variable \p{state} and decides whether to
-switch the costume to the red costume or to the blank costume. It also
+switch the costume to the \p{red} costume or to the \p{blank} costume. It also
 changes the current value of the variable \p{state} to the opposite
 value.
 
@@ -117,7 +117,7 @@ A sprite is an actor in a Scratch animation; it has scripts and
 costumes. When it moves on the stage it does not leave a mark.
 The block \scrblk{stamp} makes a mark on the stage; the mark is the
 current costume of the sprite that runs the block. The stamp is not an
-actor and does not move, and the mark remains indefinitely on the stage
+actor and does not move, and the mark remains on the stage
 until removed by running \scrblk{clear}.}
 
 Don't use the \scrblk{clear} when you only need to erase one mark such
